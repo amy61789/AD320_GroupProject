@@ -1,0 +1,47 @@
+form{
+max-width:580px;
+line-height:20px;
+font-family:"Comic sans MS";
+}
+lable{
+display:block;
+margin-bottom:6px;
+}
+
+fieldset{
+padding: 10px;
+border: 2px solid black;
+}
+
+input[type=text],
+input[type=email]{
+height:20px;
+width:98%;
+margin-bottom:10px;
+}
+
+input[type=radio],
+input[type=checkbox]{
+margin-right:6px;
+margin-bottom:2px;
+}
+
+form li{
+list-style-type:none;
+margin-left:15px;
+margin-bottom:5px;
+}
+
+form ul{
+margin-bottom:10px;
+}
+
+textarea{
+width:98%;
+margin-bottom:10px;
+resize:both;
+}
+legend{
+font-size:1.3em;
+padding:8px;
+}

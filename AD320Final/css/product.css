@@ -1,0 +1,116 @@
+*{
+padding:0;
+margin:0;
+}
+
+body{
+  background:#ddd;
+  font-size:100%;
+  
+}
+
+#wrapper{
+width:940px;
+margin:20px auto;
+background-color:rgba(255,255,255,.9);
+padding:20px;
+}
+
+header{
+height:200px;
+}
+
+table.header{
+width:940px;
+height:200px;
+
+}
+
+th {
+vertical-align:top;
+}
+
+table.header p{
+font-size:5em;
+text-align: center;
+font-family:"Comic sans MS";
+}
+
+header img{
+height:190px;
+width:200px;
+}
+
+nav{
+height:50px;
+line-height:50px;
+background-color:rgba(255,0,0,.6);
+
+}
+nav li {
+float:left;
+list-style-type:none;
+width:33.3333333333%;
+text-align:center;
+
+}
+nav a{
+text-decoration:none;
+color:black;
+display:block;
+font-family:"Comic sans MS";
+}
+nav a:hover{
+background:black;
+color:white;
+}
+
+main{
+float:left;
+width:940px;
+background:rgba(255,255,255,.5);
+
+
+}
+
+table.main{
+width:935px;
+height:215px;
+margin:2.5px;
+}
+main td{
+
+width:25%;
+vertical-align:top;
+padding:10px;
+}
+
+main td img{
+width:210px;
+}
+
+main p{
+line-height:1.5em;
+text-align:center;
+font-family:"Comic sans MS";
+}
+
+
+footer{
+height:50px;
+line-height:50px;
+background-color:black;
+margin: 20px 0;
+clear:both;
+}
+
+footer li{
+float:left;
+list-style-type:none;
+margin:0 30px 0 10px;
+color:white;
+}
+
+footer a{
+color:white;
+}
