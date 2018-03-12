@@ -18,12 +18,12 @@ padding:20px;
 }
 
 header{
-height:200px;
+height:100px;
 }
 
 table.header{
 width:940px;
-height:200px;
+height:100px;
 
 }
 
@@ -38,8 +38,8 @@ font-family:"Comic sans MS";
 }
 
 header img{
-height:190px;
-width:200px;
+height:90px;
+width:100px;
 }
 
 
@@ -81,9 +81,10 @@ font-size:1.5em;
 }
 
 table.main{
-width:935px;
+width:480px;
 height:215px;
 margin:2.5px;
+float: left;
 }
 
 main td{
@@ -120,3 +121,44 @@ color:white;
 footer a{
 color:white;
 }
+fieldset.date {
+    
+    padding-left: 20px; 
+    padding-bottom: .5em; 
+      
+    border: none; 
+} 
+.dates{
+    margin-right: 70px;
+    width:300px;
+    float: right;
+     
+}
+fieldset.date legend { 
+  margin-top: .25em; 
+  font-size: 100%; 
+} 
+
+
+fieldset.date label { 
+  position: absolute; 
+  top: -20em; 
+  left: -200em; 
+} 
+
+fieldset.date select { 
+margin: 0; 
+padding: 0; 
+font-size: 100%; 
+display: inline; 
+} 
+
+  
+
+fieldset.date select:active, 
+fieldset.date select:focus, 
+fieldset.date select:hover 
+{ 
+  border-color: gray; 
+  background-color: lightyellow; 
+} 
