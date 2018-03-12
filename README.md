@@ -1,7 +1,7 @@
 # AD320_GroupProject
 ---
 Developing a website for a car rental company.
-The car rental company rents cars to customers. The company owns several cars. Each car has a brand, model name, production year, mileage, color, and so on. Cars are divided into different categories: small, mid-size, large, limousines.
+The car rental company rents cars to customers. The company owns several cars. Each car has a brand, model name, production year, mileage, color, and so on. Cars are divided into different categories: compact, standard, Full size, and SUV.
 
 The company has many locations where you can rent a car. The rental locations are located in different cities throughout the country. There can be more than one company location in a city.
 
