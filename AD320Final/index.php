@@ -177,7 +177,6 @@
     </form>
 </table>
         <input type="submit" value="submit" name="Pick Your Car">
-    </div>
     <h2 style='font-weight:bold; padding:20px; '>Pick your car size</h2>
 
     <div class="row">
@@ -197,6 +196,7 @@
     <div><input type="submit" value="Go to your cart"></div>
      
  </main>
+<footer>
 <ul>
 <li>Copyright 2017, &copy;</li>
 <li>All Rights Reserved</li>
