@@ -4,7 +4,7 @@ require("logininfo.php");
 
 if (is_logged_in()) { ?>
 
-	Welcome, <?php echo $_SESSION['user']; ?><br />
+	Welcome, <?php echo $_SESSION['email']; ?><br />
 	<a href="logout.php">Logout</a>
 
 <?php } else { ?>

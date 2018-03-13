@@ -8,12 +8,12 @@ require("logininfo.php");
 
 // check if already logged in
 if (is_logged_in()) {
-	header("Location: index.php"); // Redirect if already logged in
+	header("Location: /ad320/final/index.php"); // Redirect if already logged in
 	exit(0);
 }
 
 // check if login attempt
-if (isset($_POST["username"]) && isset($_POST["password"])) {
+if (isset($_POST["email"]) && isset($_POST["password"])) {
 	$servername = "localhost";
         $username = "icoolsho_afunk";
         $password = "$!991-26-3507";
@@ -25,19 +25,19 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         } 
-	$user = $_POST["username"];
+	$email = $_POST["email"];
 	$pass = $_POST["password"];
-        $query = "SELECT * from Credentials WHERE Username='test1'";
+        $query = "SELECT * from customer WHERE Username='$email'";
 	//$query = "SELECT Pas from Credentials WHERE Username='" . $user . "'";
 	$result = mysqli_query($conn, $query) or die(mysql_error());
 	$row = mysqli_fetch_assoc($result);
         var_dump($row);
-	if ($pass == $row["Pas"]) {
-		$_SESSION["user"] = $user;
+	if ($pass == $row["password"]) {
+		$_SESSION["email"] = $user;
 		if (isset($_POST["remember"])) {
-			setcookie("user", $user, time() + 60*60*24, "/");
+			setcookie("email", $email, time() + 60*60*24, "/");
 		}
-		header("Location: /assignment7/index.php");
+		header("Location: /ad320/final/car_rental_index.php");
 	} else {
 		echo "Invalid username or password <br />";
 	}
@@ -46,7 +46,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
 <!-- not logged in -->
 <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
-	Username: <input type="text" name="username" /><br />
+	Email: <input type="text" name="email" /><br />
 	Password: <input type="password" name="password" /><br />
 	Remember me <input type="checkbox" name="remember" /><br />
 	<input type="submit" />

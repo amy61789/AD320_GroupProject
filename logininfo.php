@@ -2,14 +2,14 @@
 session_start();
 
 function is_logged_in() {
-	if (!isset($_SESSION["user"]) && isset($_COOKIE["user"])) {
-		$_SESSION["user"] = $_COOKIE["user"];
+	if (!isset($_SESSION["email"]) && isset($_COOKIE["email"])) {
+		$_SESSION["email"] = $_COOKIE["email"];
 	}
-	return isset($_SESSION["user"]);
+	return isset($_SESSION["email"]);
 }
 
 function logout() {
-	unset($_SESSION["user"]);
-	setcookie("user", "", 0, "/");
+	unset($_SESSION["email"]);
+	setcookie("email", "", 0, "/");
 }
 ?>

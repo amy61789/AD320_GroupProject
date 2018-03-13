@@ -5,6 +5,6 @@ echo "<h1>You have logged out.</h1><br><h2>You will be redirected back to the lo
 logout();
 
 
-header('Refresh: 5; URL=/assignment7/login.php');
+header('Refresh: 5; URL=/ad320/final/login.php');
 
 ?>
