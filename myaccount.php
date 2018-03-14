@@ -1,5 +1,14 @@
 <?php
-include "login.php";
+$servername = "localhost";
+        $username = "icoolsho_afunk";
+        $password = "$!991-26-3507";
+        $dbname = "icoolsho_afunk";
+
+        // Create connection
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
 
 $sql = "SELECT email FROM customer WHERE email = $email ";
 
