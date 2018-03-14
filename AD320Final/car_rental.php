@@ -1,14 +1,30 @@
 <?php
-    
-    $pickup = filter_input(INPUT_POST,"start");
+	$servername = "localhost";
+    $username = "icoolsho_afunk";
+    $password = "$!991-26-3507";
+    $dbname = "icoolsho_afunk";
+
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+	
+	$pickup = filter_input(INPUT_POST,"start");
     $dropoff = filter_input(INPUT_POST, "end");
     $pickup_date = filter_input(INPUT_POST, "day_start");
     $pickup_month = filter_input(INPUT_POST, "month_start");
     $pickup_year = filter_input(INPUT_POST, "year_start");
     $dropoff_month= filter_input(INPUT_POST, "day_end");
     $dropoff_date =filter_input(INPUT_POST, "month_end");
-    $dropoff_year = filter_input(INPUT_POST, "year_end");  
-    
+    $dropoff_year = filter_input(INPUT_POST, "year_end"); 
+	$car_id = filter_input(INPUT_POST, "car");
+
+	$pick_up = $pickup_year . '-' . $pickup_month . '-' . $pick_up_date;
+	$drop_off = $dropoff_year . '-' . $dropoff_month . '-' . $dropoff_date;
+	
+	$sql = "INSERT INTO order (customer_id, pick_up_date, drop_off_date, car_id) VALUES ('$customer_id', '$pick_up', '$drop_off', '$car_id');
 ?>
 
 <!doctype html>
@@ -43,7 +59,7 @@
 <nav>
 <ul>
     
-<li><a href="index.php">Rental Car</a></li>
+<li><a href="car_rental.php">Rental Car</a></li>
 <li><a href="about.html">About Us</a></li>
 <li><a href="policy.html">Rental Policy </a></li>
 <li><a href="policy.html">My Account </a></li>
@@ -186,11 +202,9 @@
         <div class="column1"><img src="images/mid2.1.jpg" alt="mid car2"></div>
     </div>
     <div class="row">
-        <div class="column"><input type="radio" name="car" value="Prius">Compact</div>
-        <div class="column col2"><input type="radio" name="car" value="Civic">Standard</div>
-        <div class="column col3"><input type="radio" name="car" value="Camry">Full Size</div>
-        <div class="column col4"><input type="radio" name="car" value="Accord">SUV</div>
-
+        <div class="column"><input type="radio" name="car" value="3">Porsche 911 GT3 / GT3 RS</div>
+        <div class="column col2"><input type="radio" name="car" value="4">Mercedes-AMG E63 S 4MATIC</div>
+        <div class="column col3"><input type="radio" name="car" value="5">Full Size</div>
     </div>
  
     <div><input type="submit" value="Go to your cart"></div>
