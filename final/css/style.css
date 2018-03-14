@@ -1,0 +1,187 @@
+*{
+padding:0;
+margin:0;
+}
+
+body{
+  background:#ddd;
+  font-size:100%;
+  background-image:url(../images/background.jpg);
+  background-attachment:fixed;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua";
+}
+
+#wrapper{
+width:940px;
+margin:20px auto;
+background-color:rgba(255,255,255,.9);
+padding:20px;
+}
+
+header{
+height:100px;
+}
+
+table .header{
+width:940px;
+height:100px;
+
+}
+
+th {
+vertical-align:top;
+}
+
+table .header p{
+font-size:5em;
+text-align: center;
+font-family:"Comic sans MS";
+}
+
+header img{
+height:90px;
+width:100px;
+}
+
+
+nav{
+height:50px;
+line-height:50px;
+background-color:rgba(255,0,0,.6);
+
+}
+nav li {
+float:left;
+list-style-type:none;
+width:25%;
+text-align:center;
+
+}
+nav a{
+text-decoration:none;
+color:black;
+display:block;
+font-family:"Comic sans MS";
+}
+nav a:hover{
+background:black;
+color:white;
+}
+
+main{
+float:left;
+width:940px;
+background:rgba(255,0,0,.5);
+
+
+}
+
+main h1{
+margin:10px;
+font-size:1.5em;
+}
+
+div .dates{
+    width: 900px;   
+}
+
+/*****************
+*
+*Cars.php 
+*          
+*
+*****************/
+
+.info{
+width:100%;
+margin: 10px;
+}
+
+.row {
+    width: 950px;
+}
+
+div.column1 img{
+    width:20%;
+}
+div.column1{
+    padding-left:10px;
+    display: inline;
+}
+div.column{
+    width: 20%;
+    padding-left:80px;
+    display: inline;
+    
+}
+div.col2{
+    padding-left:120px;
+}
+div.col3{
+    padding-left:120px;
+}
+div.col4{
+    padding-left:130px;
+}
+main p{
+margin:10px;
+font-size:1em;
+text-align: center;
+
+}
+
+
+footer{
+height:50px;
+line-height:50px;
+background-color:black;
+margin: 20px 0;
+clear:both;
+
+}
+footer li{
+float:left;
+list-style-type:none;
+margin:0 80px 0 10px;
+color:white;
+
+}
+footer a{
+color:white;
+}
+fieldset.date {
+    
+    padding-left: 20px; 
+    padding-bottom: .5em; 
+      
+    border: none; 
+} 
+
+fieldset.date legend { 
+  margin-top: .25em; 
+  font-size: 100%; 
+} 
+
+
+fieldset.date label { 
+  position: absolute; 
+  top: -20em; 
+  left: -200em; 
+} 
+
+fieldset.date select { 
+margin: 0; 
+padding: 0; 
+font-size: 100%; 
+display: inline; 
+} 
+
+  
+
+fieldset.date select:active, 
+fieldset.date select:focus, 
+fieldset.date select:hover 
+{ 
+  border-color: gray; 
+  background-color: lightyellow; 
+} 
