@@ -21,7 +21,7 @@ header{
 height:100px;
 }
 
-table.header{
+table .header{
 width:940px;
 height:100px;
 
@@ -31,7 +31,7 @@ th {
 vertical-align:top;
 }
 
-table.header p{
+table .header p{
 font-size:5em;
 text-align: center;
 font-family:"Comic sans MS";
@@ -52,7 +52,7 @@ background-color:rgba(255,0,0,.6);
 nav li {
 float:left;
 list-style-type:none;
-width:33.3333333333%;
+width:25%;
 text-align:center;
 
 }
@@ -81,20 +81,76 @@ font-size:1.5em;
 }
 
 table.main{
-width:480px;
+width:100%;
 height:215px;
 margin:2.5px;
+margin-left: 30px;
 float: left;
 }
 
-main td{
+table.main td{
+    padding-bottom: 10px; 
+    
+}
+div.dates{
+    margin: 10px 100px 0px 0px;
+    max-height: 600px;
+}
+
+.dates fieldset.date{
+    margin-top:20px;
+    
+}
+div.dates input{
+    float:right;
+    margin: 70px 0px 10px 0px;
+    
+}
+
+main .data{
 font-size: 1.2em;
 width:100%;
 text-align:center;
-padding:10px;
+padding:5px;
+}
+/*****************
+*
+*Cars.php 
+*          
+*
+*****************/
+
+.info{
+width:100%;
+margin: 10px;
 }
 
+.row {
+    width: 950px;
+}
 
+div.column1 img{
+    width:20%;
+}
+div.column1{
+    padding-left:10px;
+    display: inline;
+}
+div.column{
+    width: 20%;
+    padding-left:80px;
+    display: inline;
+    
+}
+div.col2{
+    padding-left:120px;
+}
+div.col3{
+    padding-left:120px;
+}
+div.col4{
+    padding-left:130px;
+}
 main p{
 margin:10px;
 font-size:1em;
