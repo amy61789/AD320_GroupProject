@@ -4,162 +4,261 @@ margin:0;
 }
 
 body{
-  background:#ddd;
-  font-size:100%;
-  background-image:url(../images/background.jpg);
-  background-attachment:fixed;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua";
+    background:white;
+    height:100%;
+    font-size:100%;
+    font-family: 'Josefin Slab', serif;
 }
+
+.logo{
+    font-size: 25px;
+    margin-left: 10px;
+    float: left;
+    cursor:pointer;
+    
+}
+    
+.logo a{
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    }
 
 #wrapper{
-width:940px;
-margin:20px auto;
-background-color:rgba(255,255,255,.9);
-padding:20px;
+    max-width:1500px;
+    margin:20px auto;
+    
+}
+#singup {
+    background: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    float:right;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
 }
 
-header{
-height:100px;
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
 }
 
-table .header{
-width:940px;
-height:100px;
+ 
 
+button:hover {
+    opacity:1;
 }
 
-th {
-vertical-align:top;
+/* Extra styles for the cancel button */
+.cancelbtn {
+	color:white;
+	font-size:14px;
+    padding: 10px 15px;
+    background-color: #f44336;
+}
+.signupbtn {
+	color:white;
+	font-size:14px;
+    padding: 10px 15px;
+    background-color: green;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
 }
 
-table .header p{
-font-size:5em;
-text-align: center;
-font-family:"Comic sans MS";
+/* Add padding to container elements */
+.content {
+    padding: 16px;
 }
 
-header img{
-height:90px;
-width:100px;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #666;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
+.top{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background:black;
+     
+} 
+.container{
+    position: relative;
+    text-align: center;
+    
+}
+.container p{
+    position: absolute;
+    top:40%;
+    left:50px;
+    font-size: 50px;
+    color: white;
+}
 nav{
-height:50px;
-line-height:50px;
-background-color:rgba(255,0,0,.6);
-
+    width: 100%;
+    height: 40px;
+    background: black;
 }
 nav li {
-float:left;
-list-style-type:none;
-width:25%;
-text-align:center;
-
+    float:left;
+    list-style-type:none;
+    width:25%;
+    text-align:center;
 }
 nav a{
-text-decoration:none;
-color:black;
-display:block;
-font-family:"Comic sans MS";
-}
+    line-height: 40px;
+    text-decoration:none;
+    color:#fff;
+    display:block;
+ }
 nav a:hover{
-background:black;
-color:white;
+    background:black;
+    color:white;
+}
+.main{
+    height: 700px;
+    text-align: center;
+    max-width: 1499px;
+    max-height: 100%;
+     
+}
+.select{  
+    margin: auto;
+    padding: 30px;  
+    background: rgba(255,255,255, 0.8);
+    float: left;
 }
 
-main{
-float:left;
-width:940px;
-background:rgba(255,0,0,.5);
-
-
+.reservationDate{
+    margin-top: 70px;
+    height: 200px;
+     width: 500px;
 }
 
-main h1{
-margin:10px;
-font-size:1.5em;
+.reservationDate .date{
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.row{
+    display: inline;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img{
+    max-width: 25%;
+}
+ 
+ 
+input[type="date"] {
+  width: 100px;
+}
+
+input[type="submit"]{
+    color: white;
+    background: green;
+    padding:10px;
+    border-radius: 4px;
+}
+
+input + span {
+  padding-right: 30px;
 }
 
 div .dates{
-    width: 900px;   
+    width: 900px;  
+    margin-left: 40px;
 }
-
-/*****************
-*
-*Cars.php 
-*          
-*
-*****************/
 
 .info{
 width:100%;
 margin: 10px;
 }
 
-.row {
-    width: 950px;
-}
-
-div.column1 img{
-    width:20%;
-}
-div.column1{
-    padding-left:10px;
-    display: inline;
-}
-div.column{
-    width: 20%;
-    padding-left:80px;
-    display: inline;
-    
-}
-div.col2{
-    padding-left:120px;
-}
-div.col3{
-    padding-left:120px;
-}
-div.col4{
-    padding-left:130px;
-}
-main p{
-margin:10px;
-font-size:1em;
-text-align: center;
-
+.toOrder{
+    margin:10px 20px; 
+    float: right;
 }
 
 
-footer{
-height:50px;
-line-height:50px;
-background-color:black;
-margin: 20px 0;
-clear:both;
-
-}
-footer li{
-float:left;
-list-style-type:none;
-margin:0 80px 0 10px;
-color:white;
-
-}
-footer a{
-color:white;
-}
 fieldset.date {
-    
-    padding-left: 20px; 
-    padding-bottom: .5em; 
-      
+    padding-bottom: .5em;   
     border: none; 
 } 
 
 fieldset.date legend { 
-  margin-top: .25em; 
-  font-size: 100%; 
+    margin-top: .25em; 
+    font-size: 100%; 
 } 
 
 
@@ -185,3 +284,24 @@ fieldset.date select:hover
   border-color: gray; 
   background-color: lightyellow; 
 } 
+footer{
+    position: relative;
+    width: 100%;
+    height:50px;
+    line-height:50px;
+    background-color:black;
+    clear:both;
+
+}
+footer li{
+float:left;
+list-style-type:none;
+margin:0 80px 0 10px;
+color:white;
+
+}
+footer a{
+color:white;
+bottom:0;
+position:absolute;
+}
